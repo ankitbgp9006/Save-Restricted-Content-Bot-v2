@@ -79,7 +79,7 @@ async def token_handler(client, message):
     msg = await app.get_messages(chat_id, 796)
     user_id = message.chat.id
     if len(message.command) <= 1:
-        image_url = "https://tinypic.host/image/Ratan-Tata-Sir.3uJtPm"
+        image_url = "https://i.ibb.co/fYw4SkBB/x.jpg"
         join_button = InlineKeyboardButton("Join Channel", url=f"{c_url}")
         #premium = InlineKeyboardButton("premium", url="{Contact}")   
         keyboard = InlineKeyboardMarkup([
@@ -89,7 +89,7 @@ async def token_handler(client, message):
         await message.reply_photo(
             photo=img_url,
             caption=(
-                ">Hi 👋 Welcome To Team JNC SRC Bot\n"
+                ">Hi 👋 Welcome To ᗰ𝓸𝓃ķ ᗰ𝓸𝒹𝒆 Bot\n"
                 "✳️ I am Save Restricted Robot 🤖 \n\n"
                 "> /help --> Know Commod Details \n> /token --> Get 3 Hours Free Premium Features\n> /myplan to check Your Plan"
             ),
