@@ -237,11 +237,11 @@ async def batch_link(_, message):
         return
 
     # Start batch UI
-    join_btn = InlineKeyboardButton("Join Channel", url="https://t.me/skillwithchiru")
+    join_btn = InlineKeyboardButton("Join Channel", url="http://t.me/TgXMonk")
     keyboard = InlineKeyboardMarkup([[join_btn]])
     pin_msg = await app.send_message(
         user_id,
-        f"Batch process started ⚡\nProcessing: 0/{cl}\n\n**__Powered by 🅱🅴🅰🆂🆃__**",
+        f"Batch process started ⚡\nProcessing: 0/{cl}\n\n**__Powered by ᗰ𝓸𝓃ķ ᗰ𝓸𝒹𝒆__**",
         reply_markup=keyboard
     )
     await pin_msg.pin(both_sides=True)
@@ -289,7 +289,7 @@ async def batch_link(_, message):
 
         await set_interval(user_id, interval_minutes=300)
         await pin_msg.edit_text(
-            f"✅ Batch completed: {cl} messages\n\n**__Powered by 🅱🅴🅰🆂🆃__**",
+            f"✅ Batch completed: {cl} messages\n\n**__Powered by ᗰ𝓸𝓃ķ ᗰ𝓸𝒹𝒆__**",
             reply_markup=keyboard
         )
         await app.send_message(user_id, "🎉 Batch completed successfully!")
